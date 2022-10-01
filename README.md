@@ -1,1 +1,3 @@
-# AutoPowerOff-2.0
+# 作者: 爱和牛奶的涛哥
+
+## [Version](./Source/VERSION.py)
