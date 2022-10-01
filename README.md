@@ -1,2 +1,1 @@
-# AutoPowerOff-2
-AutoPowerOff-2.0
+# AutoPowerOff-2.0
