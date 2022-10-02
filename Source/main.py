@@ -6,6 +6,7 @@ from sys import argv
 from threading import Thread
 # from win32gui import *
 from traceback import format_exc
+from subprocess import run
 from requests import get
 from os import path as os_path
 from time import sleep, strftime, localtime, time
@@ -13,7 +14,8 @@ from time import sleep, strftime, localtime, time
 # My Files Import
 from g import logging, VERSION, app_config, tools, file_tools
 from config import config, Config
-from init import work_path, defend_thread, ui
+from init import work_path, defend_thread
+from ui import Ui, UiConfig
 
 # End Import
 
@@ -72,6 +74,8 @@ class Background:
 
         self.will_shutdown = False
 
+        self.ui_config = UiConfig()
+
     def proofread_time_thread(self):
         while self.proofread_time:
             sleep(self.get_time_wait)
@@ -103,26 +107,30 @@ class Background:
 
     def mainloop(self):
         while True:
-            try:
-                sleep(1)
+            sleep(1)
 
-                config_time = self.format_time(self.__config.now_config["shutdown"])
+            config_time = self.format_time(self.__config.now_config["shutdown"])
 
-                self.will_shutdown = self.time_string == config_time
+            self.will_shutdown = self.time_string == config_time
 
-                self.__runtime.runtime = {"shutdown": self.will_shutdown}
-                self.__runtime.write()
+            self.__runtime.runtime = {"shutdown": self.will_shutdown}
+            self.__runtime.write()
 
-                if self.will_shutdown:
+            if self.will_shutdown:
+                try:
+                    ui = Ui(self.ui_config)
                     res = ui.mainloop(self.__config.now_config.get("timeout", 30))
-                    if res == 0:
-                        if Shutdown is not False:
-                            print("Run shutdown command.")
-                        else:
-                            print("In the Debug mode.")
-
-            except KeyboardInterrupt:
-                break
+                except Exception as e:
+                    res = 1
+                    logging.write_log("In main.py ERROR: load ui error: {}".format(e))
+                if res == 0:
+                    if Shutdown is not False:
+                        run("shutdown /f /s /t 1")  # 关机
+                        logging.write_log("In main.py INFO: Shut downing...")
+                        break
+                    else:
+                        logging.write_log("In main.py DEBUG: Shut downing... (并不会真的关机)")
+                        print("In the Debug mode.")
 
 
 runtime_file = "./" + os_path.splitext(os_path.split(argv[0])[1])[0] + ".runtime"  # 当前文件名 (无后缀) + .runtime
@@ -133,3 +141,6 @@ runtime = RunTime(app_config)
 
 background = Background(config, app_config, runtime)
 background.mainloop()
+
+logging.write_log("In main.py INFO: 感谢使用 自动关机2.0 {}, GitHub: https://github.com/zhuhansan666/AutoPowerOff-2-client"
+                  .format(VERSION))
