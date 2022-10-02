@@ -122,24 +122,18 @@ class Ui:
             pygame.display.update()
 
     def mainloop(self, timeout: float):
-        i = 0
-        while i <= timeout:
+        low_time = time()
+        while True:
             self.header()
             if self.exit > self.__config.exit_max:
                 self.ender(self.__config.ender_print_time, False)
                 pygame.display.quit()
                 pygame.quit()
                 return 1
-            i += 0.01
             sleep(0.01)
+            if time() - low_time > timeout:
+                break
         self.ender(self.__config.ender_print_time, True)
         pygame.display.quit()
         pygame.quit()
         return 0
-
-
-if __name__ == "__main__":
-    print("test, is will not be true shutdown you PC.")
-    config = UiConfig()
-    ui = Ui(config)
-    print(ui.mainloop(5))
