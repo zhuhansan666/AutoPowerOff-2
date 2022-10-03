@@ -127,14 +127,14 @@ class Background:
                     if Shutdown is not False:
                         run("shutdown /f /s /t 1")  # 关机
                         logging.write_log("In main.py INFO: Shut downing...")
-                        break
+                        return
                     else:
                         logging.write_log("In main.py DEBUG: Shut downing... (并不会真的关机)")
                         print("In the Debug mode.")
-                        break
+                        return
                 else:
                     logging.write_log("In main.py INFO: Shutdown closed.")
-                    break
+                    return
 
 
 runtime_file = "./" + os_path.splitext(os_path.split(argv[0])[1])[0] + ".runtime"  # 当前文件名 (无后缀) + .runtime
