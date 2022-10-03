@@ -176,7 +176,7 @@ class Defend:
 
 
 logging = Logging()
-logging.log_file = "./log/$(now_time)$.defend.log"
+logging.log_file = "../log/$(now_time)$.defend.log"
 logging.write_log(None)
 
 if __name__ == "__main__":
