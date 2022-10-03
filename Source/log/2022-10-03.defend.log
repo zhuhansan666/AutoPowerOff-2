@@ -1,0 +1,34 @@
+2022-10-03 15:45:30
+----------------------------------------------------------------------------------------------------
+system-version: Windows-10-10.0.19044-SP0
+system-bit: 64bit
+cpu-type: AMD64
+computer-name: DELL-MAINPC
+total-memory: 31.742 Gib
+CPU: ['Intel(R) Core(TM) i9-10900 CPU @ 2.80GHz']
+GPU: ['Intel(R) UHD Graphics 630', 'NVIDIA GeForce RTX 3070']
+----------------------------------------------------------------------------------------------------
+[2022-10-03 15:45:30] In defend.py (17024) INFO: 启动成功 (file= defend.exe)
+[2022-10-03 15:45:31] In defend.py (17024) INFO: 尝试获取 defend.exe 的 pid
+[2022-10-03 15:45:31] In defend.py (17024) WARNING: 尝试打开 "./defend.exe -1 main.exe" 时发现 "./defend.exe -1 main.exe" 不存在或是一个文件夹无法打开
+[2022-10-03 15:45:32] In defend.py (17024) WARNING: 获取 defend.exe 的 pid 失败, 已失败 1/0 (<=0 未无限制)
+[2022-10-03 15:45:33] In defend.py (17024) WARNING: 尝试打开 "./defend.exe -1 main.exe" 时发现 "./defend.exe -1 main.exe" 不存在或是一个文件夹无法打开
+[2022-10-03 15:45:33] In defend.py (17024) WARNING: 获取 defend.exe 的 pid 失败, 已失败 2/0 (<=0 未无限制)
+[2022-10-03 15:45:34] In defend.py (17024) WARNING: 尝试打开 "./defend.exe -1 main.exe" 时发现 "./defend.exe -1 main.exe" 不存在或是一个文件夹无法打开
+[2022-10-03 15:45:35] In defend.py (17024) WARNING: 获取 defend.exe 的 pid 失败, 已失败 3/0 (<=0 未无限制)
+[2022-10-03 15:45:35] In defend.py (17024) WARNING: 尝试打开 "./defend.exe -1 main.exe" 时发现 "./defend.exe -1 main.exe" 不存在或是一个文件夹无法打开
+[2022-10-03 15:45:36] In defend.py (17024) WARNING: 获取 defend.exe 的 pid 失败, 已失败 4/0 (<=0 未无限制)
+[2022-10-03 15:45:36] In defend.py (17024) WARNING: 尝试打开 "./defend.exe -1 main.exe" 时发现 "./defend.exe -1 main.exe" 不存在或是一个文件夹无法打开
+[2022-10-03 15:45:37] In defend.py (17024) WARNING: 获取 defend.exe 的 pid 失败, 已失败 5/0 (<=0 未无限制)
+[2022-10-03 15:45:38] In defend.py (17024) WARNING: 尝试打开 "./defend.exe -1 main.exe" 时发现 "./defend.exe -1 main.exe" 不存在或是一个文件夹无法打开
+[2022-10-03 15:45:39] In defend.py (17024) WARNING: 获取 defend.exe 的 pid 失败, 已失败 6/0 (<=0 未无限制)
+[2022-10-03 15:45:39] In defend.py (17024) WARNING: 尝试打开 "./defend.exe -1 main.exe" 时发现 "./defend.exe -1 main.exe" 不存在或是一个文件夹无法打开
+[2022-10-03 15:45:40] In defend.py (17024) WARNING: 获取 defend.exe 的 pid 失败, 已失败 7/0 (<=0 未无限制)
+[2022-10-03 15:45:41] In defend.py (17024) WARNING: 尝试打开 "./defend.exe -1 main.exe" 时发现 "./defend.exe -1 main.exe" 不存在或是一个文件夹无法打开
+[2022-10-03 15:45:41] In defend.py (17024) WARNING: 获取 defend.exe 的 pid 失败, 已失败 8/0 (<=0 未无限制)
+[2022-10-03 15:45:42] In defend.py (17024) WARNING: 尝试打开 "./defend.exe -1 main.exe" 时发现 "./defend.exe -1 main.exe" 不存在或是一个文件夹无法打开
+[2022-10-03 15:45:43] In defend.py (17024) WARNING: 获取 defend.exe 的 pid 失败, 已失败 9/0 (<=0 未无限制)
+[2022-10-03 15:45:43] In defend.py (17024) WARNING: 尝试打开 "./defend.exe -1 main.exe" 时发现 "./defend.exe -1 main.exe" 不存在或是一个文件夹无法打开
+[2022-10-03 15:45:44] In defend.py (17024) WARNING: 获取 defend.exe 的 pid 失败, 已失败 10/0 (<=0 未无限制)
+[2022-10-03 15:45:45] In defend.py (17024) WARNING: 尝试打开 "./defend.exe -1 main.exe" 时发现 "./defend.exe -1 main.exe" 不存在或是一个文件夹无法打开
+[2022-10-03 15:45:45] In defend.py (17024) WARNING: 获取 defend.exe 的 pid 失败, 已失败 11/0 (<=0 未无限制)

@@ -1,0 +1,31 @@
+2022-10-03 15:56:32
+----------------------------------------------------------------------------------------------------
+system-version: Windows-10-10.0.19044-SP0
+system-bit: 64bit
+cpu-type: AMD64
+computer-name: DELL-MAINPC
+total-memory: 31.742 Gib
+CPU: ['Intel(R) Core(TM) i9-10900 CPU @ 2.80GHz']
+GPU: ['Intel(R) UHD Graphics 630', 'NVIDIA GeForce RTX 3070']
+----------------------------------------------------------------------------------------------------
+[2022-10-03 15:56:32] In Startup.py INFO: Welcome to use the AutoPowerOff 2.0, this is the StartUp file.
+[2022-10-03 15:56:32] In Startup.py ERROR: Reg 文件写入失败: [Errno 2] No such file or directory: 'C:\\Users\\Admin\\AppData\\Local\\Temp\\./AutoPowerOff2.0\\startup.reg' (err code: -1)
+[2022-10-03 15:56:32] In Startup.py ERROR: Start ./bin/main.exe error: [WinError 2] 系统找不到指定的文件。: './bin/main.exe'
+[2022-10-03 15:57:01] In Startup.py INFO: Welcome to use the AutoPowerOff 2.0, this is the StartUp file.
+[2022-10-03 15:57:01] In Startup.py ERROR: Reg 注册失败: [WinError 740] 请求的操作需要提升。 (err code: -2)
+[2022-10-03 15:57:01] In Startup.py ERROR: Start ./bin/main.exe error: [WinError 2] 系统找不到指定的文件。: './bin/main.exe'
+[2022-10-03 15:57:11] In Startup.py INFO: Welcome to use the AutoPowerOff 2.0, this is the StartUp file.
+[2022-10-03 15:57:11] In Startup.py ERROR: Reg 注册失败: [WinError 740] 请求的操作需要提升。 (err code: -2)
+[2022-10-03 15:57:11] In Startup.py ERROR: Start ./bin/main.exe error: [WinError 2] 系统找不到指定的文件。: './bin/main.exe'
+[2022-10-03 15:57:30] In Startup.py INFO: Welcome to use the AutoPowerOff 2.0, this is the StartUp file.
+[2022-10-03 15:57:30] In Startup.py ERROR: Reg 注册失败: [WinError 740] 请求的操作需要提升。 (err code: -2)
+[2022-10-03 15:57:30] In Startup.py ERROR: Start ./bin/main.exe error: [WinError 2] 系统找不到指定的文件。: './bin/main.exe'
+[2022-10-03 16:00:17] In Startup.py INFO: Welcome to use the AutoPowerOff 2.0, this is the StartUp file.
+[2022-10-03 16:00:17] In Startup.py ERROR: Reg 注册失败: [WinError 740] 请求的操作需要提升。 (err code: -2)
+[2022-10-03 16:00:17] In Startup.py ERROR: Start ./bin/main.exe error: [WinError 2] 系统找不到指定的文件。: './bin/main.exe'
+[2022-10-03 16:12:20] In Startup.py INFO: Welcome to use the AutoPowerOff 2.0, this is the StartUp file.
+[2022-10-03 16:12:20] In Startup.py INFO: 尝试获取管理员权限
+[2022-10-03 16:12:21] In Startup.py INFO: Welcome to use the AutoPowerOff 2.0, this is the StartUp file.
+[2022-10-03 16:12:21] In Startup.py INFO: 管理员权限获取成功
+[2022-10-03 16:12:21] In Startup.py INFO: 自启动写入成功
+[2022-10-03 16:12:21] In Startup.py ERROR: Start ./bin/main.exe error: [WinError 2] 系统找不到指定的文件。: './bin/main.exe'
