@@ -148,3 +148,5 @@ background.mainloop()
 
 logging.write_log("In main.py INFO: 感谢使用 自动关机2.0 {}, GitHub: https://github.com/zhuhansan666/AutoPowerOff-2-client"
                   .format(VERSION))
+
+run("taskkill /im defend.exe /f", shell=True)
