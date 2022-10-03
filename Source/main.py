@@ -132,6 +132,9 @@ class Background:
                         logging.write_log("In main.py DEBUG: Shut downing... (并不会真的关机)")
                         print("In the Debug mode.")
                         break
+                else:
+                    logging.write_log("In main.py INFO: Shutdown closed.")
+                    break
 
 
 runtime_file = "./" + os_path.splitext(os_path.split(argv[0])[1])[0] + ".runtime"  # 当前文件名 (无后缀) + .runtime
